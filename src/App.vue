@@ -3,6 +3,7 @@
     <MyHeader/>
     <WorldClassFitness/>
     <SignUp/>
+    <Details/>
     <MyMain/>
     <MyFooter/>
   </div>
@@ -14,6 +15,7 @@ import MyMain from './components/MyMain.vue'
 import MyFooter from './components/MyFooter.vue'
 import WorldClassFitness from './components/WorldClassFitness.vue'
 import SignUp from './components/SignUp.vue'
+import Details from './components/Details.vue'
 
 export default {
   name: 'App',
@@ -21,6 +23,7 @@ export default {
     MyHeader,
     WorldClassFitness,
     SignUp,
+    Details,
     MyMain,
     MyFooter,
     
@@ -29,6 +32,8 @@ export default {
 </script>
 
 <style lang="scss">
+
+
 *{
   margin: 0;
   padding: 0;
