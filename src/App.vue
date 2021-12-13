@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <MyHeader/>
+    <WorldClassFitness/>
+    <SignUp/>
     <MyMain/>
     <MyFooter/>
   </div>
@@ -10,13 +12,18 @@
 import MyHeader from './components/MyHeader.vue'
 import MyMain from './components/MyMain.vue'
 import MyFooter from './components/MyFooter.vue'
+import WorldClassFitness from './components/WorldClassFitness.vue'
+import SignUp from './components/SignUp.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
+    WorldClassFitness,
+    SignUp,
     MyMain,
-    MyFooter
+    MyFooter,
+    
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div id="containerheader">
     <div class="container">
-      <!-- menu -->
+      <Menu/>
       <div class="centred">
         <h1>NO PAIN NO GAIN</h1>
         <p>
@@ -12,22 +12,17 @@
         </div>
       </div>
     </div>
-    <div class="section">
-        <div class="centred">
-           <h1>WORLD CLASS Fitness</h1>
-           <img src="../assets/img/divider-xx-red.png" alt="">
-           <p>njbnvvdfsjhdvfbhdvfbhdvfbhdvfbhjdvfbhjdvfbhjdvfbhjdvfbhj</p>
-        </div>
-    </div>
   </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
+import Menu from '@/components/Menu.vue'
 
 export default {
   name: "MyHeader",
-  components: {},
+  components: {
+      Menu,
+  },
 };
 </script>
 
@@ -68,19 +63,6 @@ export default {
     text-align: center;
     width: 80%;
     
-}
-.section{
-    position: relative;
-    background-color: rgba(37,41,43,255);
-    height: 350px;
-    width: 100%;
-    h1{
-        color: white;
-        font-size: 40px;
-    }
-    p{
-        color: rgba(72,75,76,255);
-    }
 }
 
 </style>
