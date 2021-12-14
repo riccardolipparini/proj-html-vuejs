@@ -102,6 +102,6 @@ export default {
         text-decoration: none;
         color: rgba(174, 175, 174, 255);
       }
-    }
+  }
 }
 </style>

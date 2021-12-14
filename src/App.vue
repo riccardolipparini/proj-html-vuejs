@@ -8,6 +8,7 @@
     <Performance/>
     <Aphorism/>
     <Trainers/>
+    <News/>
     <MyFooter/>
   </div>
 </template>
@@ -22,6 +23,8 @@ import Details from './components/Details.vue'
 import Performance from './components/Performance.vue'
 import Aphorism from './components/Aphorism.vue'
 import Trainers from './components/Trainers.vue'
+import News from './components/News.vue'
+
 
 
 export default {
@@ -35,6 +38,7 @@ export default {
     Performance,
     Aphorism,
     Trainers,
+    News,
     MyFooter,
     
   }
