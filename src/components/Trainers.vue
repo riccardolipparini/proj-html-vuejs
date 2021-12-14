@@ -14,7 +14,9 @@
             <p>descrizione bla bla bla bla bla bla bla</p>
 
             <div class="trainers_social">
-              <div class="social"></div>
+              <div class="social">
+               <font-awesome-icon :icon="['fab', 'facebook']" />
+              </div>
               <div class="social"></div>
               <div class="social"></div>
             </div>

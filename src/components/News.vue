@@ -2,7 +2,7 @@
   <div id="container">
     <div class="contain_results">
       <div class="title">
-        <h1>real world results</h1>
+        <h1>PERFORMANCE NEWS</h1>
         <img src="../assets/img/divider-xx-red.png" alt="" />
       </div>
       <div class="results">
@@ -10,8 +10,8 @@
           <div class="news">
             <img src="../assets/img/blog1-400x208.jpg" alt="" />
             <div class="news_space">
-              <h1>Train with you free weights or other thing?</h1>
-              <p>bla bla bla bla bla bla bla bla bla bla bla bla</p>
+              <h1>titolo</h1>
+              <p>text</p>
             </div>
           </div>
         </div>
@@ -20,8 +20,8 @@
           <div class="news">
             <img src="../assets/img/blog1-400x208.jpg" alt="" />
             <div class="news_space">
-              <h1>Train with you free weights or other thing?</h1>
-              <p>bla bla bla bla bla bla bla bla bla bla bla bla</p>
+              <h1>titolo</h1>
+              <p>text</p>
             </div>
           </div>
         </div>
@@ -30,8 +30,8 @@
           <div class="news">
             <img src="../assets/img/blog1-400x208.jpg" alt="" />
             <div class="news_space">
-              <h1>Train with you free weights or other thing?</h1>
-              <p>bla bla bla bla bla bla bla bla bla bla bla bla</p>
+              <h1>titolo</h1>
+              <p>text</p>
             </div>
           </div>
         </div>
