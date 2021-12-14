@@ -7,6 +7,7 @@
     <MyMain/>
     <Performance/>
     <Aphorism/>
+    <Trainers/>
     <MyFooter/>
   </div>
 </template>
@@ -20,6 +21,7 @@ import SignUp from './components/SignUp.vue'
 import Details from './components/Details.vue'
 import Performance from './components/Performance.vue'
 import Aphorism from './components/Aphorism.vue'
+import Trainers from './components/Trainers.vue'
 
 
 export default {
@@ -32,6 +34,7 @@ export default {
     MyMain,
     Performance,
     Aphorism,
+    Trainers,
     MyFooter,
     
   }
