@@ -5,6 +5,8 @@
     <SignUp/>
     <Details/>
     <MyMain/>
+    <Performance/>
+    <Aphorism/>
     <MyFooter/>
   </div>
 </template>
@@ -16,6 +18,9 @@ import MyFooter from './components/MyFooter.vue'
 import WorldClassFitness from './components/WorldClassFitness.vue'
 import SignUp from './components/SignUp.vue'
 import Details from './components/Details.vue'
+import Performance from './components/Performance.vue'
+import Aphorism from './components/Aphorism.vue'
+
 
 export default {
   name: 'App',
@@ -25,6 +30,8 @@ export default {
     SignUp,
     Details,
     MyMain,
+    Performance,
+    Aphorism,
     MyFooter,
     
   }

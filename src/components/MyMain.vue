@@ -1,10 +1,10 @@
 <template>
   <div id="container">
-    <div class="containerinside">
+    
       <div class="contain_results">
         <div class="title">
           <h1>real world results</h1>
-          <img src="../assets/img/divider-white-xx.png" alt="" />
+          <img src="../assets/img/divider-xx-red.png" alt="" />
         </div>
         <div class="results">
           <div class="results_cards">
@@ -17,8 +17,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div> 
+    
 
     
   </div>
@@ -34,14 +34,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.containerinside {
+#container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: rgba(37, 41, 43, 255);
-  //debug
-  border-bottom: white solid 2px;
+  
   .contain_results {
     width: 60%;
   }
