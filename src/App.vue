@@ -9,6 +9,7 @@
     <Aphorism/>
     <Trainers/>
     <News/>
+    <JoinUs/>
     <MyFooter/>
   </div>
 </template>
@@ -24,6 +25,7 @@ import Performance from './components/Performance.vue'
 import Aphorism from './components/Aphorism.vue'
 import Trainers from './components/Trainers.vue'
 import News from './components/News.vue'
+import JoinUs from './components/JoinUs.vue'
 
 
 
@@ -39,6 +41,7 @@ export default {
     Aphorism,
     Trainers,
     News,
+    JoinUs,
     MyFooter,
     
   }

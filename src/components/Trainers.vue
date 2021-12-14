@@ -18,13 +18,12 @@
               <div class="social"></div>
               <div class="social"></div>
             </div>
-          </div> 
+          </div>
         </div>
-
       </div>
       <div class="buttons">
-          <a href="">VIEW ALL TRAINERS</a>
-        </div>
+        <a href="">VIEW ALL TRAINERS</a>
+      </div>
     </div>
   </div>
 </template>
@@ -66,12 +65,13 @@ export default {
     .trainers_description {
       margin: 0 auto;
       width: 80%;
-      h1, h2{
+      h1,
+      h2 {
         color: white;
         margin-top: 10px;
       }
-      p{
-        color: rgba(128,128,129,255);
+      p {
+        color: rgba(128, 128, 129, 255);
         margin-top: 20px;
       }
     }
@@ -91,17 +91,17 @@ export default {
     }
   }
   .buttons {
-      padding: 10px;
-      border: solid rgba(174, 175, 174, 255) 1px;
-      width: 180px;
-      margin: 0 auto;
-      margin-top: 40px;
-      cursor: pointer;
-      text-align: center;
-      a {
-        text-decoration: none;
-        color: rgba(174, 175, 174, 255);
-      }
+    padding: 10px;
+    border: solid rgba(174, 175, 174, 255) 1px;
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 40px;
+    cursor: pointer;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: rgba(174, 175, 174, 255);
+    }
   }
 }
 </style>
