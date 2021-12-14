@@ -11,6 +11,7 @@
     <News/>
     <JoinUs/>
     <MyFooter/>
+    <EndPart/>
   </div>
 </template>
 
@@ -26,6 +27,7 @@ import Aphorism from './components/Aphorism.vue'
 import Trainers from './components/Trainers.vue'
 import News from './components/News.vue'
 import JoinUs from './components/JoinUs.vue'
+import EndPart from './components/EndPart.vue'
 
 
 
@@ -43,6 +45,7 @@ export default {
     News,
     JoinUs,
     MyFooter,
+    EndPart
     
   }
 }
