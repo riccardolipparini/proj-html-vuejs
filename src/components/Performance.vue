@@ -2,12 +2,12 @@
   <div id="container">
     <div class="contain_results">
       <div class="title">
-        <h1>real world results</h1>
+        <h1>HIGH PERFORMANCE FACILITIES</h1>
         <img src="../assets/img/divider-xx-red.png" alt="" />
       </div>
     <div id="flex_performance">
-      <div class="performance_image">
-          <img src="../assets/img/home-image1.jpg" alt="">
+      <div class="performance_image" v-for="img, i in performances" :key="i">
+          <img :src="require(`../assets/img/${img.image}`)" alt="">
       </div>
     </div> 
     </div>
@@ -19,7 +19,30 @@
 
 export default {
   name: "Performance",
-  components: {},
+  data(){
+    return{
+      performances:[
+        {
+          image:"home-image1.jpg"
+        },
+        {
+          image:"home-image2.jpg"
+        },
+        {
+          image:"home-image3.jpg"
+        },
+        {
+          image:"home-image4.jpg"
+        },
+        {
+          image:"home-image6.jpg"
+        },
+        {
+          image:"home-image54.jpg"
+        },
+      ]
+    }
+  }
 };
 </script>
 
@@ -35,6 +58,13 @@ export default {
   }
   .title {
     text-align: center;
+    img{
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    h1{
+      color: white;
+    }
   }
 }
 #flex_performance{
