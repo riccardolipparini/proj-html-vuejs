@@ -3,7 +3,7 @@
         <div class="centred">
            <h1>WORLD CLASS Fitness</h1>
            <img src="../assets/img/divider-xx-red.png" alt="">
-           <p>njbnvvdfsjhdvfbhdvfbhdvfbhdvfbhjdvfbhjdvfbhjdvfbhjdvfbhj</p>
+           <p>At Avada Gym, everything we do from to to bottom is of the highest quality to ensure <br> we're equipped to help you reach your goals of a healthy and fit lifestyle.</p>
         </div>
     </div>
 </template>
@@ -13,9 +13,6 @@
 
 export default {
   name: 'WorldClassFitness',
-  components: {
-    
-  }
 }
 </script>
 
@@ -27,6 +24,9 @@ export default {
     transform: translate(-50%, -40%);
     text-align: center;
     width: 80%;
+    img{
+        margin:20px 0;
+    }
     
 }
 .section{
