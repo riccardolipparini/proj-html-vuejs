@@ -1,7 +1,7 @@
 <template>
   <div id="container">
     <div class="brucelee">
-      <h2>i fear the man balablabla balabal ablablab balbalba balbaòba</h2>
+      <p>”I fear not the man who has practiced 10,000 <br> kicks once, but I fear the man who has <br> practiced one kick 10,000 times.”</p>
       <h4>Bruce lee quote of the day</h4>
 
     </div>
@@ -33,8 +33,9 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-    h2{
+    p{
       color: white;
+      font-size: 30px;
     }
     h4{
       color: white;

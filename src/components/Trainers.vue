@@ -6,19 +6,23 @@
         <img src="../assets/img/divider-xx-red.png" alt="" />
       </div>
       <div class="results">
-        <div class="trainers_cards">
-          <img src="../assets/img/trainer1-400x297.jpg" alt="" />
+        <div class="trainers_cards" v-for="train, i in trainers" :key="i">
+          <img :src="require(`../assets/img/${train.image}`)" alt="" />
           <div class="trainers_description">
-            <h1>nome</h1>
-            <h2>ruolo</h2>
-            <p>descrizione bla bla bla bla bla bla bla</p>
+            <h1>{{train.name}}</h1>
+            <h2>{{train.role}}</h2>
+            <p>{{train.text}}</p>
 
             <div class="trainers_social">
               <div class="social">
-               <font-awesome-icon :icon="['fab', 'facebook']" />
+               <font-awesome-icon class="icons_social" :icon="['fab', 'facebook']" />
               </div>
-              <div class="social"></div>
-              <div class="social"></div>
+              <div class="social">
+                <font-awesome-icon class="icons_social" :icon="['fab', 'twitter']" />
+              </div>
+              <div class="social">
+                <font-awesome-icon class="icons_social" :icon="['fab', 'instagram']" />
+              </div>
             </div>
           </div>
         </div>
@@ -35,7 +39,30 @@
 
 export default {
   name: "Trainers",
-  components: {},
+  data(){
+    return{
+      trainers:[
+        {
+          name:"Ann Baker",
+          role:"Tara Smith",
+          image:"trainer1.jpg",
+          text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          name:"Anne Warren",
+          role:"Paolo Smith",
+          image:"trainer3.jpg",
+          text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          name:"Peter Rice",
+          role:"Lucia Smith",
+          image:"trainer4.jpg",
+          text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+      ]
+    }
+  }
 };
 </script>
 
@@ -52,6 +79,13 @@ export default {
   }
   .title {
     text-align: center;
+    img{
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    h1{
+      color: white;
+    }
   }
   .results {
     display: flex;
@@ -105,5 +139,9 @@ export default {
       color: rgba(174, 175, 174, 255);
     }
   }
+}
+.icons_social{
+  color: white;
+  font-size: 20px;
 }
 </style>

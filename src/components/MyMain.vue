@@ -12,7 +12,7 @@
               <img :src="require(`../assets/img/${exClients.image}`)" alt="" />
             </div>
             <div class="results_imgtext">
-              <p>{{exClients.quote}}</p>
+              <p><em>"{{exClients.quote}}"</em></p>
               <h4>- {{exClients.sign}}</h4>
             </div>
           </div>
