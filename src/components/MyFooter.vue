@@ -55,9 +55,8 @@ export default {
   .contain_footer {
     width: 60%;
     display: flex;
-    .info_footer{
-      padding-right:50px;
-    }
+    justify-content: space-between;
+    
     h4{
       color: rgba(50,55,58,255);
       margin-bottom: 30px;

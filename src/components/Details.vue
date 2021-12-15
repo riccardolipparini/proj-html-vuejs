@@ -2,7 +2,9 @@
   <div id="container">
       
     <div class="details" v-for="detail, i in details" :key="i">
-        <div class="icons"></div>
+        <div class="icons">
+          <font-awesome-icon class="font_icon" :icon="['fas', detail.icon ]" />
+        </div>
         <h1>{{detail.title}}</h1>
         <img src="../assets/img/divider-x-red.png" alt="">
         <p>{{detail.text}}</p>
@@ -22,22 +24,22 @@ export default {
         {
           title: "Strenght & Conditioning",
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.babababab baa  abab babbbbbbbb ababa baba ba aba abbba abba bab abbabab",
-          here: false
+          icon:"unlink"
         },
         {
           title: "Fitness & Cardio",
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.babababab baa  abab babbbbbbbb ababa baba ba aba abbba abba bab abbabab",
-          here: false
+          icon:"cloud"
         },
         {
           title: "Flexibility & Rest",
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.babababab baa  abab babbbbbbbb ababa baba ba aba abbba abba bab abbabab",
-          here: false
+          icon:"bicycle"
         },
         {
           title: "Heath & Diet",
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.babababab baa  abab babbbbbbbb ababa baba ba aba abbba abba bab abbabab",
-          here: false
+          icon:"cloud"
         },
       ]
     }
@@ -77,8 +79,15 @@ export default {
         height: 100px;
         width: 100px;
         border-radius: 50%;
-        border: solid 1px red;
+        border: solid 1px rgba(207,93,89,255);
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .font_icon{
+          color: rgba(207,93,89,255);
+          font-size: 35px;
+        }
     }
     
     
