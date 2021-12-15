@@ -3,17 +3,17 @@
     
       <div class="contain_results">
         <div class="title">
-          <h1>real world results</h1>
+          <h1>Real world results</h1>
           <img src="../assets/img/divider-xx-red.png" alt="" />
         </div>
         <div class="results">
-          <div class="results_cards">
+          <div class="results_cards" v-for="exClients, i in results" :key="i">
             <div class="results_imgtext">
-              <img src="../assets/img/review_1-compressor.jpg" alt="" />
+              <img :src="require(`../assets/img/${exClients.image}`)" alt="" />
             </div>
             <div class="results_imgtext">
-              <p>blabalabalabal ablabalabla balabalb abalaba bakab</p>
-              <h1>Firma</h1>
+              <p>{{exClients.quote}}</p>
+              <h4>- {{exClients.sign}}</h4>
             </div>
           </div>
         </div>
@@ -29,7 +29,32 @@
 
 export default {
   name: "MyMain",
-  components: {},
+  data(){
+    return{
+      results:[
+        {
+          quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          sign:"Tara Smith",
+          image:"review_1-compressor.jpg"
+        },
+        {
+          quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          sign:"Paolo Smith",
+          image:"review_2-compressor.jpg"
+        },
+        {
+          quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          sign:"Lucia Smith",
+          image:"review_3-compressor-2.jpg"
+        },
+        {
+          quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          sign:"Franco Smith",
+          image:"review_4-compressor-2.jpg"
+        },
+      ]
+    }
+  }
 };
 </script>
 
@@ -46,6 +71,13 @@ export default {
   }
   .title {
     text-align: center;
+    img{
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    h1{
+      color: white;
+    }
   }
   .results {
     display: flex;
@@ -59,6 +91,12 @@ export default {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      p{
+        color: rgba(92,92,94,255);
+      }
+      h4{
+        color: rgba(164,164,164,255);
+      }
       .results_imgtext {
         margin: 0 20px;
       }
